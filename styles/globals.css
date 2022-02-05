@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    box-sizing: border-box;
+}
+
+@layer components {
+    .filter-btn {
+        @apply py-2 px-4 border rounded-full whitespace-nowrap cursor-pointer shadow-sm hover:shadow-md active:bg-gray-50 active:scale-90 transition duration-200 ease-out;
+    }
+}
